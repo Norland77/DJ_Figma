@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/app.min.js"></script>
+    <title>Главная страница</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <main class="main">
+                <header class="header">
+    <div class="header_wrapper">
+        <div class="header_container _container">
+            <div class="header_body">
+                <a href="" class="header__logo">
+                    <img src="../img/logo.svg" alt="Logo" class="header__logo-img">
+                </a>
+                <div class="header__menu menu">
+                    <button class="menu__icon icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">News</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Music</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Media</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Tours</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+                <div class="main__name _container">
+                    <h3 class="main__subtitle">New Single</h3>
+                    <h1 class="main__title">War For Love</h1>
+                </div>
+                <div class="main__audio _container">
+                    <div class="player1">
+                        <div class="player-control">
+                            <i class="fas fa-play" id="play-pause1"></i>
+                        </div>
+                        <div class="input">
+                          <input type="range" />
+                          <div></div>
+                        </div>
+                        <span class="start">start</span>
+                        <span>-</span>
+                        <span>end</span>
+                        
+                    </div>
+                    <audio src="./audio/lspnomera.mp3"></audio>
+                </div>
+            </main>
+            <div class="audioplayer">
+                <div class="audioplayer_container _container">
+                    <div class="song-info">
+                        <img
+                          src="./img/covers/lsp_nomera.jpg"
+                          alt=""
+                        />
+                    </div>
+                    <div class="song-main">
+                        <div class="song-text">
+                            <img src="./img/Ekva.svg" alt="Ekva" class="song-ekva">
+                            <h3 class="song-title">Last tracks</h3>
+                        </div>
+                        <div class="player">
+                            <div class="player-control">
+                                <i class="fas fa-play" id="play-pause"></i>
+                            </div>
+                            <div class="input">
+                              <input type="range" />
+                              <div></div>
+                            </div>
+                            <span class="start">start</span>
+                            <span>-</span>
+                            <span>end</span>
+                            
+                        </div>
+                        <div class="library">
+                            <div class="library-song selected" id="0">
+                              <div class="library-song-info">
+                                <p class="number">01</p>
+                                <h3>ЛСП - Номера</h3>
+                              </div>
+                            </div>
+                            <div class="library-song" id="1">
+                              <div class="library-song-info">
+                                <p class="number">02</p>
+                                <h3>Бумбокс - Вахтерам</h3>
+                              </div>
+                            </div>
+                            <div class="library-song" id="2">
+                              <div class="library-song-info">
+                                <p class="number">03</p>
+                                <h3>Бумбокс - Квіти у волосі</h3>
+                              </div>
+                            </div>
+                            <div class="library-song" id="3">
+                              <div class="library-song-info">
+                                <p class="number">04</p>
+                                <h3>Бумбокс - Ой у лузі червона калина</h3>
+                              </div>
+                            </div>
+                            <div class="library-song" id="4">
+                              <div class="library-song-info">
+                                <p class="number">05</p>
+                                <h3>Бумбокс - Та4то</h3>
+                              </div>
+                            </div>
+                        </div>
+                        <audio class="audio" src="./audio/lspnomera.mp3"></audio>
+                </div>
+            </div>
+            <footer>
+    
+</footer>
+        </div>
+    </body>
+</html>
