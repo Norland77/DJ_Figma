@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/LogoS.svg" type="image/svg">
     <script src="js/app.min.js"></script>
-    <title>Главная страница</title>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Bright Lights</title>
 </head>
-    <body>
-        <div class="wrapper">
-            <main class="main">
-                <header class="header">
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <header class="header">
     <div class="header_wrapper">
         <div class="header_container _container">
             <div class="header_body">
-                <a href="" class="header__logo">
-                    <img src="img/logo.svg" alt="Logo" class="header__logo-img">
+                <a href="#" class="header__logo">
+                    <img src="./img/logo.svg" alt="Logo" class="header__logo-img">
                 </a>
                 <div class="header__menu menu">
                     <button class="menu__icon icon-menu">
@@ -27,22 +31,22 @@
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="" class="menu__link">About</a>
+                                <a data-goto=".about__body" href="##" class="menu__link">About</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">News</a>
+                                <a data-goto=".quote" href="##" class="menu__link">News</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">Music</a>
+                                <a data-goto=".audioplayer" href="##" class="menu__link">Music</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">Media</a>
+                                <a data-goto=".gallery__container" href="##" class="menu__link">Media</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">Tours</a>
+                                <a data-goto=".slider" href="##" class="menu__link">Tours</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">Contacts</a>
+                                <a data-goto=".footer" href="##" class="menu__link">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -51,91 +55,431 @@
         </div>
     </div>
 </header>
-                <div class="main__name _container">
-                    <h3 class="main__subtitle">New Single</h3>
-                    <h1 class="main__title">War For Love</h1>
+      <div class="main__name _container">
+        <h3 class="main__subtitle">New Single</h3>
+        <h1 class="main__title">War For Love</h1>
+      </div>
+      <div class="main__audio _container">
+        <div class="player1">
+          <div class="player-control">
+            <i class="fas fa-play" id="play-pause1"></i>
+          </div>
+          <div class="input">
+            <input type="range" />
+            <div></div>
+          </div>
+          <span class="start">start</span>
+          <span>-</span>
+          <span>end</span>
+        </div>
+        <audio src="./audio/lspnomera.mp3"></audio>
+      </div>
+    </main>
+    <container class="news">
+      <div class="news__wrapper">
+        <div class="main__news _container">
+          <div class="main__news_item">
+            <a href=""><img src="./img/News1.png" alt="News" class="main__news_img"></a>
+            <div class="main__news_cover">
+              <p class="main__news_text">Working on my upcoming full-lenth
+                album that`s releasing later this year.</p>
+            </div>
+            <a class="main__news_btn">Learn More</a>
+          </div>
+          <div class="main__news_item">
+            <a href=""><img src="./img/News2.png" alt="News" class="main__news_img"></a>
+            <div class="main__news_cover">
+              <p class="main__news_text">Halloween vibes. 
+                Listen my new track!</p>
+            </div>
+            <a class="main__news_btn">Learn More</a>
+          </div>
+          <div class="main__news_item">
+            <a href=""><img src="./img/News3.png" alt="News" class="main__news_img"></a>
+            <div class="main__news_cover">
+              <p class="main__news_text">WarForLove is OUT NOW!! 
+                Stream it here!</p>
+            </div>
+            <a class="main__news_btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container class="about">
+      <div class="about__wraper">
+        <div class="about__container _container">
+          <div class="about__body">
+            <div class="about__info">
+              <div class="about__info_header">
+                <img src="./img/Ekva.svg" alt="Ekva" class="about__info_header-icon">
+                <h3 class="about__info_header-title">
+                  Bright Lights
+                </h3>
+              </div>
+              <div class="about__info_body">
+                <p class="about__info_text">
+                  Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous 
+
+                  pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020. 
+                </p>
+              </div>
+              <div class="about__info_footer">
+                <div class="about__info_footer-item">
+                  <img src="./img/AboutIcon.svg" alt="AboutIcon" class="about__info_footer-icon">
+                  <span class="about__info_footer-text">
+                    Based in: Los Angeles
+                  </span>
                 </div>
-                <div class="main__audio _container">
-                    <div class="player1">
-                        <div class="player-control">
-                            <i class="fas fa-play" id="play-pause1"></i>
-                        </div>
-                        <div class="input">
-                          <input type="range" />
-                          <div></div>
-                        </div>
-                        <span class="start">start</span>
-                        <span>-</span>
-                        <span>end</span>
-                        
-                    </div>
-                    <audio src="./audio/lspnomera.mp3"></audio>
+                <div class="about__info_footer-item">
+                  <img src="./img/AboutIcon.svg" alt="AboutIcon" class="about__info_footer-icon">
+                  <span class="about__info_footer-text">
+                    Founded in 2011
+                  </span>
                 </div>
-            </main>
-            <div class="audioplayer">
-                <div class="audioplayer_container _container">
-                    <div class="song-info">
-                        <img
-                          src="./img/covers/lsp_nomera.jpg"
-                          alt=""
-                        />
-                    </div>
-                    <div class="song-main">
-                        <div class="song-text">
-                            <img src="./img/Ekva.svg" alt="Ekva" class="song-ekva">
-                            <h3 class="song-title">Last tracks</h3>
-                        </div>
-                        <div class="player">
-                            <div class="player-control">
-                                <i class="fas fa-play" id="play-pause"></i>
-                            </div>
-                            <div class="input">
-                              <input type="range" />
-                              <div></div>
-                            </div>
-                            <span class="start">start</span>
-                            <span>-</span>
-                            <span>end</span>
-                            
-                        </div>
-                        <div class="library">
-                            <div class="library-song selected" id="0">
-                              <div class="library-song-info">
-                                <p class="number">01</p>
-                                <h3>ЛСП - Номера</h3>
-                              </div>
-                            </div>
-                            <div class="library-song" id="1">
-                              <div class="library-song-info">
-                                <p class="number">02</p>
-                                <h3>Бумбокс - Вахтерам</h3>
-                              </div>
-                            </div>
-                            <div class="library-song" id="2">
-                              <div class="library-song-info">
-                                <p class="number">03</p>
-                                <h3>Бумбокс - Квіти у волосі</h3>
-                              </div>
-                            </div>
-                            <div class="library-song" id="3">
-                              <div class="library-song-info">
-                                <p class="number">04</p>
-                                <h3>Бумбокс - Ой у лузі червона калина</h3>
-                              </div>
-                            </div>
-                            <div class="library-song" id="4">
-                              <div class="library-song-info">
-                                <p class="number">05</p>
-                                <h3>Бумбокс - Та4то</h3>
-                              </div>
-                            </div>
-                        </div>
-                        <audio class="audio" src="./audio/lspnomera.mp3"></audio>
+                <div class="about__info_footer-item">
+                  <img src="./img/AboutIcon.svg" alt="AboutIcon" class="about__info_footer-icon">
+                  <span class="about__info_footer-text">
+                    Genre: #DancePop 
+                  </span>
+                </div>
+                <div class="about__info_footer-item">
+                  <img src="./img/AboutIcon.svg" alt="AboutIcon" class="about__info_footer-icon">
+                  <span class="about__info_footer-text">
+                    Label: 333 Recordings
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="about__images">
+              <img src="./img/About2.png" alt="Girl" class="about__imgTwo">
+              <img src="./img/About1.png" alt="Girl" class="about__imgOne">
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container class="quote">
+      <div class="quote__wrapper">
+        <div class="quote__container _container">
+          <div class="quote__body">
+            <img src="./img/Quote1.png" alt="" class="quote__img">
+            <div class="quote__body_main">
+              <p class="quote__body_text">
+                “In an age where mainstream music is designed to be as
+                easily consumed as possible, listening to Bright Lights is
+                refreshing, to say the least. Her sound is perfect for radio
+                but complex enough to separate her from other pop newcomers.”
+              </p>
+              <a href="" class="quote__body_link">PopULove.net</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container class="audioplayer">
+      <div class="audioplayer_container _container">
+        <div class="song-info">
+          <img src="./img/covers/lsp_nomera.jpg" alt="" />
+        </div>
+        <div class="song-main">
+          <div class="song-text">
+            <img src="./img/Ekva.svg" alt="Ekva" class="song-ekva">
+            <h3 class="song-title">Last tracks</h3>
+          </div>
+          <div class="player">
+            <div class="player-control">
+              <i class="fas fa-play" id="play-pause"></i>
+            </div>
+            <div class="input">
+              <input type="range" />
+              <div></div>
+            </div>
+            <span class="start">start</span>
+            <span>-</span>
+            <span>end</span>
+          </div>
+          <div class="library">
+            <div class="library-song selected" id="0">
+              <div class="library-song-info">
+                <p class="number">01</p>
+                <h3>ЛСП - Номера</h3>
+              </div>
+            </div>
+            <div class="library-song" id="1">
+              <div class="library-song-info">
+                <p class="number">02</p>
+                <h3>Бумбокс - Вахтерам</h3>
+              </div>
+            </div>
+            <div class="library-song" id="2">
+              <div class="library-song-info">
+                <p class="number">03</p>
+                <h3>Бумбокс - Квіти у волосі</h3>
+              </div>
+            </div>
+            <div class="library-song" id="3">
+              <div class="library-song-info">
+                <p class="number">04</p>
+                <h3>Бумбокс - Ой у лузі червона калина</h3>
+              </div>
+            </div>
+            <div class="library-song" id="4">
+              <div class="library-song-info">
+                <p class="number">05</p>
+                <h3>Бумбокс - Та4то</h3>
+              </div>
+            </div>
+          </div>
+          <audio class="audio" src="./audio/lspnomera.mp3"></audio>
+        </div>
+      </div>
+    </container>
+    <container class="gallery">
+      <div class="gallery__wrapper">
+        <div class="gallery__container _container">
+          <div class="gallery__body">
+            <div class="gallery__body_item vertical1">
+              <img src="./img/GalleryVertikal1.png" alt="" class="gallery__body_img">
+              <a href="" class="gallery__body_link"><a href="" class="gallery__body_text">EDC Las Vegas Mainstage</a></a>
+            </div>
+            <div class="gallery__body_item one1">
+              <img src="./img/Gallery1.png" alt="" class="gallery__body_img">
+              <a href="" class="gallery__body_link"><a href="" class="gallery__body_text">EDC Las Vegas Mainstage</a></a>
+            </div>
+            <div class="gallery__body_item one2">
+              <img src="./img/Gallery2.png" alt="" class="gallery__body_img">
+              <a href="" class="gallery__body_link"><a href="" class="gallery__body_text">EDC Las Vegas Mainstage</a></a>
+            </div>
+            <div class="gallery__body_item gorizontal">
+              <img src="./img/GalleryGorizontal.png" alt="" class="gallery__body_img">
+              <a href="" class="gallery__body_link"><a href="" class="gallery__body_text">EDC Las Vegas Mainstage</a></a>
+            </div>
+            <div class="gallery__body_item vertical2">
+              <img src="./img/GalleryVertikal2.png" alt="" class="gallery__body_img">
+              <a href="" class="gallery__body_link"><a href="" class="gallery__body_text">EDC Las Vegas Mainstage</a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container class="slider">
+      <div class="swiper _container _swiper__container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider__item">
+              <img src="./img/Slider1.png" alt="" class="slider__item_img">
+              <div class="slider__item_info">
+                <div class="slider__info_upper">
+                  <span class="slider__info_subtitle">Chandler, AZ</span>
+                  <h4 class="slider__info_title">The Park at Wild Horse Pass</h4>
+                </div>
+                <div class="slider__info_lower">
+                  <span class="slider__info_date">Apr 02 2021</span>
+                  <button id="1" class="slider__info_btn">TICKETS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider__item">
+            <img src="./img/Slider2.png" alt="" class="slider__item_img">
+            <div class="slider__item_info">
+              <div class="slider__info_upper">
+                <span class="slider__info_subtitle">Ibiza, IBZ</span>
+                <h4 class="slider__info_title">Swag Ibiza Club</h4>
+              </div>
+              <div class="slider__info_lower">
+                <span class="slider__info_date">Jul 08 2021</span>
+                <button id="2" class="slider__info_btn">TICKETS</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider__item">
+              <img src="./img/Slider3.png" alt="" class="slider__item_img">
+              <div class="slider__item_info">
+                <div class="slider__info_upper">
+                  <span class="slider__info_subtitle">Ibiza, IBZ</span>
+                  <h4 class="slider__info_title">El Swing Ibiza</h4>
+                </div>
+                <div class="slider__info_lower">
+                  <span class="slider__info_date">Jul 10 2021</span>
+                  <button id="3" class="slider__info_btn">TICKETS</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__item">
+            <img src="./img/Slider1.png" alt="" class="slider__item_img">
+            <div class="slider__item_info">
+              <div class="slider__info_upper">
+                <span class="slider__info_subtitle">Chandler, AZ</span>
+                <h4 class="slider__info_title">The Park at Wild Horse Pass</h4>
+              </div>
+              <div class="slider__info_lower">
+                <span class="slider__info_date">Apr 02 2021</span>
+                <button id="1" class="slider__info_btn">TICKETS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__item">
+          <img src="./img/Slider2.png" alt="" class="slider__item_img">
+          <div class="slider__item_info">
+            <div class="slider__info_upper">
+              <span class="slider__info_subtitle">Ibiza, IBZ</span>
+              <h4 class="slider__info_title">Swag Ibiza Club</h4>
+            </div>
+            <div class="slider__info_lower">
+              <span class="slider__info_date">Jul 08 2021</span>
+              <button id="2" class="slider__info_btn">TICKETS</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__item">
+            <img src="./img/Slider3.png" alt="" class="slider__item_img">
+            <div class="slider__item_info">
+              <div class="slider__info_upper">
+                <span class="slider__info_subtitle">Ibiza, IBZ</span>
+                <h4 class="slider__info_title">El Swing Ibiza</h4>
+              </div>
+              <div class="slider__info_lower">
+                <span class="slider__info_date">Jul 10 2021</span>
+                <button id="3" class="slider__info_btn">TICKETS</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      </div>
+    </container>
+    <container id="1" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__container _container">
+          <div class="popup__body">
+            <div class="popup__body_left">
+              <div class="slider__item">
+                <img src="./img/Slider1.png" alt="" class="slider__item_img">
+                <div class="slider__item_info">
+                  <div class="slider__info_upper">
+                    <span class="slider__info_subtitle">Chandler, AZ</span>
+                    <h4 class="slider__info_title">The Park at Wild Horse Pass</h4>
+                  </div>
+                  <div class="slider__info_lower">
+                    <span class="slider__info_date">Apr 02 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__body_right">
+              <a href="" class="popup__body_close">X</a>
+              <h3 class="popup__body_price">
+                500грн
+              </h3>
+              <input type="number" name="" id="" class="popup__body_count">
+              <button class="popup__body_googlepay">GooglePay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container id="2" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__container _container">
+          <div class="popup__body">
+            <div class="popup__body_left">
+              <div class="slider__item">
+                <img src="./img/Slider2.png" alt="" class="slider__item_img">
+                <div class="slider__item_info">
+                  <div class="slider__info_upper">
+                    <span class="slider__info_subtitle">Ibiza, IBZ</span>
+                    <h4 class="slider__info_title">Swag Ibiza Club</h4>
+                  </div>
+                  <div class="slider__info_lower">
+                    <span class="slider__info_date">Jul 08 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__body_right">
+              <a href="" class="popup__body_close">X</a>
+              <h3 class="popup__body_price">
+                700грн
+              </h3>
+              <input type="number" name="" id="" class="popup__body_count">
+              <button class="popup__body_googlepay">GooglePay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container id="3" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__container _container">
+          <div class="popup__body">
+            <div class="popup__body_left">
+              <div class="slider__item">
+                <img src="./img/Slider3.png" alt="" class="slider__item_img">
+                <div class="slider__item_info">
+                  <div class="slider__info_upper">
+                    <span class="slider__info_subtitle">Ibiza, IBZ</span>
+                    <h4 class="slider__info_title">El Swing Ibiza</h4>
+                  </div>
+                  <div class="slider__info_lower">
+                    <span class="slider__info_date">Jul 10 2021</span>
+                  </div>
                 </div>
             </div>
-            <footer>
-    
-</footer>
+            </div>
+            <div class="popup__body_right">
+              <a href="" class="popup__body_close">X</a>
+              <h3 class="popup__body_price">
+                1000грн
+              </h3>
+              <input type="number" name="" id="" class="popup__body_count">
+              <button class="popup__body_googlepay">GooglePay</button>
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </container>
+    <footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__container _container">
+            <div class="footer__body">
+                <img src="./img/logo.svg" alt="Logo" class="footer__body_logo">
+                <div class="footer__body_contact">
+                    <div class="footer__body_upper">
+                        <h4 class="footer__body_lable">Artist Management:</h4>
+                        <h4 class="footer__body_lable">EMAIL:</h4>
+                    </div>
+                    <div class="footer__body_lower">
+                        <h4 class="footer__body_name">Jake Henny</h4>
+                        <a class="footer__body_name" href=""><h4 class="footer__body_name">jake@brightlightsofficial.com</h4></a>
+                    </div>
+                </div>
+                <div class="footer__body_social">
+                    <a href="" class="footer__body_link"><img src="./img/FooterApple.svg" alt="Apple" class="footer__body_icon"></a>
+                    <a href="" class="footer__body_link"><img src="./img/FooterSpotify.svg" alt="Spotify" class="footer__body_icon"></a>
+                    <a href="" class="footer__body_link"><img src="./img/FooterInstagram.svg" alt="Instagram" class="footer__body_icon"></a>
+                    <a href="" class="footer__body_link"><img src="./img/FooterYoutube.svg" alt="Youtube" class="footer__body_icon"></a>
+                    <a href="" class="footer__body_link"><img src="./img/FooterTwitter.svg" alt="Twitter" class="footer__body_icon"></a>
+                    <a href="" class="footer__body_link"><img src="./img/FooterFacebooksvg.svg" alt="Facebook" class="footer__body_icon"></a>
+                </div>
+                <div class="footer__body_footer">
+                    <p>©  2020 DJ bright lights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
 </html>
